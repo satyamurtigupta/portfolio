@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profolio.io - Your Career, Mastered.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+        .cta-button {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed w-full z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-teal-700">profolio.io</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="text-gray-600 hover:text-teal-700 transition duration-300">About</a>
+                <a href="#how-it-works" class="text-gray-600 hover:text-teal-700 transition duration-300">How It Works</a>
+                <a href="#pricing" class="text-gray-600 hover:text-teal-700 transition duration-300">Pricing</a>
+                <a href="#upload-pay" class="px-6 py-2 bg-teal-600 text-white font-bold rounded-full hover:bg-teal-700 transition duration-300 cta-button">Get Started</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-teal-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <a href="#about" class="block py-3 px-4 text-gray-600 hover:bg-gray-100 transition duration-300">About</a>
+            <a href="#how-it-works" class="block py-3 px-4 text-gray-600 hover:bg-gray-100 transition duration-300">How It Works</a>
+            <a href="#pricing" class="block py-3 px-4 text-gray-600 hover:bg-gray-100 transition duration-300">Pricing</a>
+            <a href="#upload-pay" class="block py-3 px-4 bg-teal-600 text-white font-bold hover:bg-teal-700 transition duration-300">Get Started</a>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+
+        <!-- Hero Section -->
+        <section id="hero" class="bg-teal-600 text-white py-20 md:py-32">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Your Career, Mastered.</h1>
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Build an ATS-Friendly Resume & Personal Portfolio Instantly.</h1>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Stop getting lost in the resume black hole. We analyze, rewrite, and create a custom portfolio to get you noticed by recruiters.</p>
+                <a href="#upload-pay" class="px-8 py-4 bg-white text-teal-600 font-bold rounded-full text-lg hover:bg-gray-200 transition duration-300 cta-button">Get Started Today</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">About profolio.io</h2>
+                <div class="max-w-2xl mx-auto text-left text-lg text-gray-700 space-y-6">
+                    <p>At **profolio.io**, we believe that your professional story deserves to be told in a way that stands out. In today's competitive job market, an old-fashioned resume is simply not enough. Our mission is to empower job seekers by transforming their career history into a powerful, ATS-friendly resume and a stunning personal portfolio website.</p>
+                    <p>We combine the power of advanced technology with a deep understanding of what recruiters and hiring managers look for. Our automated system analyzes your skills and experience to craft a resume that passes through applicant tracking systems (ATS) with ease. But we don't stop there. We also build you a sleek, modern portfolio that showcases your work, achievements, and unique personal brand, giving you a significant edge over other candidates.</p>
+                    <p>Our goal is to make the job application process faster, smarter, and more successful for you. Join the thousands of professionals who have already mastered their careers with profolio.io and started landing more interviews.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works / Process Section -->
+        <section id="how-it-works" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">How It Works: Your Path to a Better Career</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="p-6 bg-white rounded-2xl shadow-lg">
+                        <div class="flex justify-center items-center mb-4 text-teal-600">
+                            <span class="text-5xl font-bold">1</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Upload & Analyze</h3>
+                        <p class="text-gray-600">Securely upload your current resume. Our AI instantly analyzes it for key skills, keywords, and formatting.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-2xl shadow-lg">
+                        <div class="flex justify-center items-center mb-4 text-teal-600">
+                            <span class="text-5xl font-bold">2</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Rewrite & Build</h3>
+                        <p class="text-gray-600">We rewrite your resume to be ATS-friendly and create a professional, customizable online portfolio showcasing your skills.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-2xl shadow-lg">
+                        <div class="flex justify-center items-center mb-4 text-teal-600">
+                            <span class="text-5xl font-bold">3</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Land the Job</h3>
+                        <p class="text-gray-600">Use your new resume and portfolio to apply with confidence and get more interviews.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Profolio.io / Features & Benefits Section -->
+        <section id="why-profolio" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">Why Choose Profolio.io?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="p-6 bg-white rounded-2xl shadow-lg">
+                        <div class="flex justify-center mb-4 text-teal-600">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944c-3.136 0-6.103 1.096-8.529 3.167l-3.5 3.5a1.5 1.5 0 000 2.122l3.5 3.5c2.426 2.071 5.393 3.167 8.529 3.167a11.955 11.955 0 005.618-1.558"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Beat the Bots</h3>
+                        <p class="text-gray-600">Our ATS-optimized resumes are designed to pass the automated screening software used by 99% of companies.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-2xl shadow-lg">
+                        <div class="flex justify-center mb-4 text-teal-600">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h5m-5 0h9a2 2 0 002-2V8a2 2 0 00-2-2h-5m-5 0v3m0 3h-2m-2-3h2m0 0l-2-2m2 2l2-2"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Stand Out Online</h3>
+                        <p class="text-gray-600">Don't just have a resume, have a personal brand. We create a sleek, professional portfolio to impress hiring managers.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-2xl shadow-lg">
+                        <div class="flex justify-center mb-4 text-teal-600">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Save Time & Money</h3>
+                        <p class="text-gray-600">Stop wasting hours on formatting and tweaking. Get a professional, interview-ready package in minutes, not days.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Packages (Pricing Section) -->
+        <section id="pricing" class="py-20 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">Find the Perfect Plan for Your Career</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                    <!-- Package 1: Starter -->
+                    <div class="bg-gray-50 rounded-2xl shadow-lg p-8 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Starter</h3>
+                            <div class="text-5xl font-bold text-teal-600 mb-2">₹49</div>
+                            <p class="text-sm text-gray-500 mb-6">One-time payment</p>
+                            <ul class="text-left space-y-3 text-gray-600">
+                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>1 ATS-friendly resume</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Analysis document</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>1 personal website</li>
+                            </ul>
+                        </div>
+                        <a href="#upload-pay" class="mt-8 block w-full text-center px-4 py-3 bg-teal-600 text-white font-bold rounded-full hover:bg-teal-700 transition duration-300 cta-button">Get Started</a>
+                    </div>
+                    <!-- Package 2: The Pro Builder -->
+                    <div class="bg-gray-50 rounded-2xl shadow-lg p-8 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">The Pro Builder</h3>
+                            <div class="text-5xl font-bold text-teal-600 mb-2">₹99</div>
+                            <p class="text-sm text-gray-500 mb-6">One-time payment</p>
+                            <ul class="text-left space-y-3 text-gray-600">
+                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>All of Starter package</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>5 Additional ATS resume templates</li>
+                            </ul>
+                        </div>
+                        <a href="#upload-pay" class="mt-8 block w-full text-center px-4 py-3 bg-teal-600 text-white font-bold rounded-full hover:bg-teal-700 transition duration-300 cta-button">Get Started</a>
+                    </div>
+                    <!-- Package 3: The Precision Fit -->
+                    <div class="bg-gray-50 rounded-2xl shadow-lg p-8 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">The Precision Fit</h3>
+                            <div class="text-5xl font-bold text-teal-600 mb-2">₹199</div>
+                            <p class="text-sm text-gray-500 mb-6">One-time payment</p>
+                            <ul class="text-left space-y-3 text-gray-600">
+                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>All of The Pro Builder</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Resume customized for a specific job description</li>
+                            </ul>
+                        </div>
+                        <a href="#upload-pay" class="mt-8 block w-full text-center px-4 py-3 bg-teal-600 text-white font-bold rounded-full hover:bg-teal-700 transition duration-300 cta-button">Get Started</a>
+                    </div>
+                    <!-- Package 4: The Interview Master -->
+                    <div class="bg-teal-600 rounded-2xl shadow-lg p-8 flex flex-col justify-between text-white">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">The Interview Master</h3>
+                            <div class="text-5xl font-bold mb-2">₹299</div>
+                            <p class="text-sm text-teal-200 mb-6">One-time payment</p>
+                            <ul class="text-left space-y-3">
+                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>All of The Precision Fit</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-300" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Interview preparation questions tailored to your resume</li>
+                            </ul>
+                        </div>
+                        <a href="#upload-pay" class="mt-8 block w-full text-center px-4 py-3 bg-white text-teal-600 font-bold rounded-full hover:bg-gray-200 transition duration-300 cta-button">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upload & Pay Section -->
+        <section id="upload-pay" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Get Started in 3 Simple Steps</h2>
+                <div class="max-w-xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-lg">
+                    <form id="payment-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                            <input type="text" id="name" name="name" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500 sm:text-sm p-2">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500 sm:text-sm p-2">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email ID</label>
+                            <input type="email" id="email" name="email" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-teal-500 focus:border-teal-500 sm:text-sm p-2">
+                        </div>
+                        <div>
+                            <label for="resume" class="block text-sm font-medium text-gray-700 mb-2">Resume Upload (PDF or DOCX)</label>
+                            <div id="file-drop-area" class="border-2 border-dashed border-gray-300 rounded-md p-6 text-center cursor-pointer hover:border-teal-500 transition duration-300">
+                                <input type="file" id="resume" name="resume" accept=".pdf,.docx" required class="hidden">
+                                <p id="file-upload-text" class="text-gray-500">Drag & drop your file here, or click to browse</p>
+                                <p id="file-name" class="text-teal-600 font-medium hidden mt-2"></p>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="package" class="block text-sm font-medium text-gray-700">Select a Package</label>
+                            <select id="package" name="package" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-teal-500 focus:border-teal-500 sm:text-sm rounded-md">
+                                <option value="Starter" data-price="49" selected>Starter (₹49)</option>
+                                <option value="Pro Builder" data-price="99">The Pro Builder (₹99)</option>
+                                <option value="Precision Fit" data-price="199">The Precision Fit (₹199)</option>
+                                <option value="Interview Master" data-price="299">The Interview Master (₹299)</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" id="pay-button" class="w-full px-4 py-3 bg-teal-600 text-white font-bold rounded-full hover:bg-teal-700 transition duration-300 cta-button">
+                                Pay with Razorpay (<span id="payment-amount">₹49</span>)
+                            </button>
+                            <div id="loading-indicator" class="hidden mt-4 text-center text-teal-600 font-medium">Processing payment...</div>
+                        </div>
+                    </form>
+                    <div id="message-box" class="hidden mt-6 p-4 rounded-md text-sm text-center"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials / Social Proof Section -->
+        <section id="testimonials" class="py-20 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">Hear from Our Happy Customers</h2>
+                <div class="relative w-full max-w-2xl mx-auto overflow-hidden">
+                    <div id="testimonial-carousel" class="flex transition-transform duration-500">
+                        <!-- Testimonial 1 -->
+                        <div class="w-full flex-shrink-0 text-center p-8 bg-gray-50 rounded-2xl shadow-lg">
+                            <p class="text-lg md:text-xl italic mb-4">"profolio.io helped me land three interviews in a week. The ATS resume was a game-changer!"</p>
+                            <p class="font-bold text-teal-600">- Anjali S., Marketing Manager</p>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="w-full flex-shrink-0 text-center p-8 bg-gray-50 rounded-2xl shadow-lg">
+                            <p class="text-lg md:text-xl italic mb-4">"My new personal portfolio made me stand out from other candidates. I got the job!"</p>
+                            <p class="font-bold text-teal-600">- Rohan P., Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Call to Action -->
+        <section id="final-cta" class="bg-teal-600 text-white py-20 md:py-32">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">Ready to Take the Next Step in Your Career?</h2>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Start building a resume and portfolio that gets you noticed.</p>
+                <a href="#upload-pay" class="px-8 py-4 bg-white text-teal-600 font-bold rounded-full text-lg hover:bg-gray-200 transition duration-300 cta-button">Get Started for ₹49</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 profolio.io. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Dynamic package price update
+        const packageSelect = document.getElementById('package');
+        const paymentAmountSpan = document.getElementById('payment-amount');
+        const finalCtaButton = document.querySelector('#final-cta .cta-button');
+
+        packageSelect.addEventListener('change', (e) => {
+            const selectedOption = e.target.options[e.target.selectedIndex];
+            const price = selectedOption.getAttribute('data-price');
+            paymentAmountSpan.textContent = `₹${price}`;
+            finalCtaButton.textContent = `Get Started for ₹${price}`;
+        });
+
+        // Testimonial carousel
+        let currentSlide = 0;
+        const testimonials = document.querySelectorAll('#testimonial-carousel > div');
+        function showSlide(index) {
+            testimonials.forEach((slide, i) => {
+                slide.style.transform = `translateX(-${index * 100}%)`;
+            });
+        }
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % testimonials.length;
+            showSlide(currentSlide);
+        }, 5000); // Change testimonial every 5 seconds
+
+        // File upload handling
+        const fileDropArea = document.getElementById('file-drop-area');
+        const fileInput = document.getElementById('resume');
+        const fileNameSpan = document.getElementById('file-name');
+        const fileUploadText = document.getElementById('file-upload-text');
+
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            fileDropArea.addEventListener(eventName, preventDefaults, false);
+        });
+
+        function preventDefaults(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+
+        ['dragenter', 'dragover'].forEach(eventName => {
+            fileDropArea.addEventListener(eventName, () => fileDropArea.classList.add('border-teal-500'), false);
+        });
+
+        ['dragleave', 'drop'].forEach(eventName => {
+            fileDropArea.addEventListener(eventName, () => fileDropArea.classList.remove('border-teal-500'), false);
+        });
+
+        fileDropArea.addEventListener('drop', handleDrop, false);
+
+        function handleDrop(e) {
+            const dt = e.dataTransfer;
+            const files = dt.files;
+            fileInput.files = files;
+            updateFileName(files[0]);
+        }
+
+        fileInput.addEventListener('change', () => {
+            updateFileName(fileInput.files[0]);
+        });
+
+        fileDropArea.addEventListener('click', () => {
+            fileInput.click();
+        });
+
+        function updateFileName(file) {
+            if (file) {
+                fileNameSpan.textContent = file.name;
+                fileNameSpan.classList.remove('hidden');
+                fileUploadText.classList.add('hidden');
+            } else {
+                fileNameSpan.textContent = '';
+                fileNameSpan.classList.add('hidden');
+                fileUploadText.classList.remove('hidden');
+            }
+        }
+
+        // Razorpay & Webhook Integration
+        const form = document.getElementById('payment-form');
+        const payButton = document.getElementById('pay-button');
+        const loadingIndicator = document.getElementById('loading-indicator');
+        const messageBox = document.getElementById('message-box');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Show loading state
+            payButton.disabled = true;
+            loadingIndicator.classList.remove('hidden');
+            messageBox.classList.add('hidden');
+
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const resumeFile = document.getElementById('resume').files[0];
+            const packageSelect = document.getElementById('package');
+            const selectedPackage = packageSelect.value;
+            const amount = parseInt(packageSelect.options[packageSelect.selectedIndex].getAttribute('data-price')) * 100; // Razorpay expects amount in paise
+
+            if (!resumeFile) {
+                showMessage("Please upload your resume.", "error");
+                payButton.disabled = false;
+                loadingIndicator.classList.add('hidden');
+                return;
+            }
+
+            // Read the resume file as a base64 string
+            const fileReader = new FileReader();
+            fileReader.readAsDataURL(resumeFile);
+
+            fileReader.onload = async function() {
+                const base64File = fileReader.result.split(',')[1];
+                const fileName = resumeFile.name;
+                const fileType = resumeFile.type;
+
+                const options = {
+                    "key": "YOUR_RAZORPAY_KEY_ID", // Replace with your actual Razorpay Key ID
+                    "amount": amount,
+                    "currency": "INR",
+                    "name": "profolio.io",
+                    "description": `Payment for ${selectedPackage} package`,
+                    "handler": async function(response) {
+                        // This function is called on successful payment
+                        const paymentData = {
+                            name: name,
+                            phone: phone,
+                            email: email,
+                            package: selectedPackage,
+                            payment_id: response.razorpay_payment_id,
+                            order_id: response.razorpay_order_id,
+                            signature: response.razorpay_signature,
+                            resume: {
+                                fileName: fileName,
+                                fileType: fileType,
+                                data: base64File // Sending the resume as a base64 string
+                            }
+                        };
+                        
+                        try {
+                            // Trigger n8n webhook
+                            const webhookUrl = "YOUR_N8N_WEBHOOK_URL"; // Replace with your actual n8n webhook URL
+                            const webhookResponse = await fetch(webhookUrl, {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify(paymentData)
+                            });
+
+                            if (webhookResponse.ok) {
+                                showMessage("Payment successful! Your order is being processed.", "success");
+                            } else {
+                                throw new Error('Webhook failed to trigger.');
+                            }
+
+                        } catch (error) {
+                            console.error('Webhook error:', error);
+                            showMessage("Payment was successful, but there was an issue processing your order. Please contact support with your payment ID.", "error");
+                        } finally {
+                             payButton.disabled = false;
+                             loadingIndicator.classList.add('hidden');
+                        }
+                    },
+                    "prefill": {
+                        "name": name,
+                        "email": email,
+                        "contact": phone
+                    },
+                    "theme": {
+                        "color": "#0d9488" // Updated to a shade of teal
+                    },
+                    "modal": {
+                        "ondismiss": function() {
+                            // Restore button state if the modal is closed
+                            payButton.disabled = false;
+                            loadingIndicator.classList.add('hidden');
+                        }
+                    }
+                };
+                
+                const rzp = new Razorpay(options);
+                rzp.open();
+            }
+
+            fileReader.onerror = function() {
+                showMessage("Error reading the resume file. Please try again.", "error");
+                payButton.disabled = false;
+                loadingIndicator.classList.add('hidden');
+            };
+        });
+
+        function showMessage(message, type) {
+            messageBox.textContent = message;
+            messageBox.classList.remove('hidden', 'bg-red-100', 'text-red-700', 'bg-green-100', 'text-green-700');
+            if (type === 'success') {
+                messageBox.classList.add('bg-green-100', 'text-green-700');
+            } else {
+                messageBox.classList.add('bg-red-100', 'text-red-700');
+            }
+        }
+    </script>
+</body>
+</html>
